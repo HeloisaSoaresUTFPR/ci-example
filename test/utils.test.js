@@ -39,9 +39,15 @@ describe('Utils', () => {
     describe('acharCaracter', () => {
         test('caracter encontrado', () => {
             expect(acharCaracter(4, 'abcd', 'c'))
-                .toBe('caracter encontrado');
+                .toBe(0);
         });
     });
+
+    describe('acharCaracter', () => {
+        test('caracter encontrado', () => {
+            expect(acharCaracter(4, 'abcd', 'g'))
+                .toBe('caracter encontrado');
+        });
     
     
 
