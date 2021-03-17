@@ -48,6 +48,7 @@ describe('Utils', () => {
             expect(acharCaracter(4, 'abcd', 'g'))
                 .toBe('caracter encontrado');
         });
+    });
     
     
 
