@@ -18,7 +18,7 @@ describe('Utils', () => {
     describe('gerarNumeroAleatorio', () => {
         test('Retorna valores', () => {
             expect(gerarNumeroAleatorio(2, 3))
-                .toBe(3);
+                .toBe(2);
         });
     });
 
@@ -27,5 +27,24 @@ describe('Utils', () => {
             expect(acharCaracter(-4, 'abcde', 'c'))
                 .toBe('comprimento invalido');
         });
-    });    
+    });
+
+    describe('acharCaracter', () => {
+        test('comprimento diferente', () => {
+            expect(acharCaracter(5, 'abcd', 'c'))
+                .toBe('comprimento fornecido diferente do comprimento real');
+        });
+    });
+
+    describe('acharCaracter', () => {
+        test('caracter encontrado', () => {
+            expect(acharCaracter(4, 'abcd', 'c'))
+                .toBe('caracter encontrado');
+        });
+    });
+    
+    
+
+
+
 });
